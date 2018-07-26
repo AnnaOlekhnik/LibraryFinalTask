@@ -7,7 +7,6 @@ import by.htp.library.dao.BookDao;
 import by.htp.library.dao.impl.BookDaoForDB;
 
 import by.htp.library.entity.Book;
-import by.htp.library.entity.User;
 
 public class ConsoleScanner {
 
@@ -131,9 +130,20 @@ public class ConsoleScanner {
 			dao.giveBook(id, cardId);
 			
 			break;
+			
+		 case 4:
+				 System.out.println("Enter ID of return book...");
+				 id = Integer.valueOf(scan.nextLine());
+				 dao.fixBookReturn(id);
+				 System.out.println("Build success!!!");
+				 break;
+				 default:
+				 System.out.println("Please, check the entered data, and try again");
+				 break;
+				 }
 		}
 		
-	}
+	
 
 	private void createBook() {
 		

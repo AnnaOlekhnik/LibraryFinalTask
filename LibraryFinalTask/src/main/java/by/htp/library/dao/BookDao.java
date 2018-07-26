@@ -9,8 +9,6 @@ public interface BookDao {
 	
 	User authorize(int id, String pass);
 	
-	void checkAuthorization(User user) ;
-	
 	List<Book> viewCatalog();
 	
 	Book findBook(int id);
@@ -20,17 +18,9 @@ public interface BookDao {
 	void addUser(int id, String name, String password);
 	
 	void addBook(Book book);
-
 	
+	void fixBookReturn(int id);
 	
-	
-	
-	void registrationOfTakenBooks();
-	
-	void fixBookReturn();
-	
-	void addUser();
-
 	void giveBook(int id, int cardID);
 
 	
