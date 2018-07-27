@@ -1,11 +1,7 @@
 package by.htp.library.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import by.htp.library.dao.BookDao;
 import by.htp.library.dao.impl.BookDaoForLibrarian;
-import by.htp.library.entity.Book;
 import by.htp.library.entity.User;
 import by.htp.library.scanner.Librarian;
 

@@ -229,7 +229,6 @@ public class BookDaoForDB implements BookDao {
 	@Override
 	public void fixBookReturn(int id) {
 		Connection con = connect();
-		Book book = null;
 		try {
 			PreparedStatement ps = con.prepareStatement(SQL_REMOVE_BOOK);
 			ps.setInt(1, id);

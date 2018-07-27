@@ -7,7 +7,6 @@ import by.htp.library.dao.BookDao;
 import by.htp.library.entity.Book;
 import by.htp.library.entity.TakenBook;
 import by.htp.library.entity.User;
-import by.htp.library.scanner.ConsoleScanner;
 import by.htp.library.scanner.Librarian;
 
 public class BookDaoForLibrarian implements BookDao {
