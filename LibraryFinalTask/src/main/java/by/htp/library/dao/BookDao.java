@@ -12,8 +12,6 @@ public interface BookDao {
 	List<Book> viewCatalog();
 	
 	Book findBook(int id);
-
-	void checkDebtExistance();
 	
 	void addUser(int id, String name, String password);
 	

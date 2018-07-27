@@ -8,6 +8,12 @@ public class User {
 	
 	public User() {}
 	
+	public User( int cardId, String password) {
+		super();
+		this.cardId = cardId;
+		this.password = password;
+	}
+	
 	public User( int cardId,String name, String password) {
 		super();
 		this.name = name;
